@@ -31,7 +31,7 @@ export function Footer() {
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(255,255,255,0.6)' }}>
               {t('home.about.desc')}
             </p>
-            <div className="flex items-center gap-3 mt-5">
+            {/* <div className="flex items-center gap-3 mt-5">
               {[
                 { icon: <Facebook size={16} />, href: '#' },
                 { icon: <Instagram size={16} />, href: '#' },
@@ -48,7 +48,7 @@ export function Footer() {
                   {social.icon}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -73,11 +73,21 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--npc-copper)' }} />
-                <span className="text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('contact.address')}</span>
+                <div className='flex flex-col'>
+                  <span className="text-sm font-black" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('contact.mainAddress.title')}</span>
+                  <span className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('contact.mainAddress')}</span>
+                </div>
+              </li>
+               <li className="flex items-start gap-2.5">
+                <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: 'var(--npc-copper)' }} />
+                <div className='flex flex-col'>
+                  <span className="text-sm font-black" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('contact.branchAddress.title')}</span>
+                  <span className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>{t('contact.branchAddress')}</span>
+                </div>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={14} style={{ color: 'var(--npc-copper)' }} />
-                <span className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>+92-3063366401</span>
+                <span className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>+92327-3366444</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={14} style={{ color: 'var(--npc-copper)' }} />

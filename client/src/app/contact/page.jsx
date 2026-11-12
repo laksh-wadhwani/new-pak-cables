@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Users, Package } from 'lucide-react';
 import { useState } from 'react';
 
-const WHATSAPP_NUMBER = '923063366401';
+const WHATSAPP_NUMBER = '923273366444';
 const WHATSAPP_MSG = encodeURIComponent("Hi New Pak Cables, I'd like to get in touch.");
 const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
 
@@ -91,11 +91,15 @@ export default function Contact() {
                 {[
                   {
                     bg: 'rgba(216,90,48,0.1)', icon: <MapPin className="w-5 h-5" />, iconColor: 'var(--npc-copper)',
-                    label: t('contact.address.title'), lines: [t('contact.address')],
+                    label: t('contact.mainAddress.title'), lines: [t('contact.mainAddress')],
+                  },
+                  {
+                    bg: 'rgba(216,90,48,0.1)', icon: <MapPin className="w-5 h-5" />, iconColor: 'var(--npc-copper)',
+                    label: t('contact.branchAddress.title'), lines: [t('contact.branchAddress')],
                   },
                   {
                     bg: 'rgba(24,95,165,0.1)', icon: <Phone className="w-5 h-5" />, iconColor: 'var(--npc-blue)',
-                    label: 'Phone', lines: ['+92306-3366401', '+92300-3295707'],
+                    label: 'Phone', lines: ['+92327-3366444'],
                   },
                   {
                     bg: 'rgba(216,90,48,0.1)', icon: <Mail className="w-5 h-5" />, iconColor: 'var(--npc-copper)',

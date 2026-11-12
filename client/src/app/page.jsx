@@ -14,7 +14,7 @@ const WIRE_PILE = "https://images.unsplash.com/photo-1717667745852-a5bd6876c1de?
 const COPPER_COIL = "https://images.unsplash.com/photo-1613031595478-de64daa4b8f9?w=800&h=600&fit=crop&auto=format";
 const ORANGE_WIRES = "https://images.unsplash.com/photo-1717386255785-59c670564341?w=1600&h=600&fit=crop&auto=format";
 
-const WHATSAPP_HREF = `https://wa.me/923001234567?text=${encodeURIComponent("Hi New Pak Cables, I'd like to get a quote.")}`;
+const WHATSAPP_HREF = `https://wa.me/923273366444?text=${encodeURIComponent("Hi New Pak Cables, I'd like to get a quote.")}`;
 
 function H(props) {
   const { as: Tag = 'h2', weight = 600, style, ...rest } = props;
@@ -305,12 +305,13 @@ export default function Home() {
               </H>
               <div className="space-y-4 mb-8">
                 {[
-                  { icon: '📍', text: t('contact.address') },
-                  { icon: '📞', text: '+92 XXX XXXXXXX' },
-                  { icon: '✉️', text: 'info@newpakcables.com' },
+                  { icon: '📍', text: t('contact.mainAddress') },
+                  { icon: '📍', text: t('contact.branchAddress') },
+                  { icon: '📞', text: '+92-3273366444' },
+                  { icon: '✉️', text: 'support@newpakcables.com' },
                   { icon: '🕐', text: 'Mon–Sat: 9:00 AM – 6:00 PM' },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
+                  <div key={i} className="flex items-center gap-3">
                     <span className="text-lg">{item.icon}</span>
                     <span className="text-sm font-normal" style={{ color: 'var(--npc-navy)', opacity: 0.75 }}>{item.text}</span>
                   </div>

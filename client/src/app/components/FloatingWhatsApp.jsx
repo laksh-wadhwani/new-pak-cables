@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '923063366401';
+const WHATSAPP_NUMBER = '923273366444';
 const WHATSAPP_MSG = encodeURIComponent("Hi New Pak Cables, I'm interested in your products.");
 const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`;
 
