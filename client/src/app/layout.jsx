@@ -7,6 +7,9 @@ import './globals.css';
 export const metadata = {
   title: 'New Pak Cables',
   description: 'Manufacturers of Electrical Cables & Wires — Ghotki, Sindh, Pakistan',
+  icons: {
+    icon: "images/npc-logo-tab.png"
+  }
 };
 
 export default function RootLayout({ children }) {
